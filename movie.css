@@ -1,0 +1,606 @@
+body{
+	overflow: hidden;
+	margin: 0;
+	background-color: green;
+}
+
+
+#sky{
+	width: 100%;
+	height: 500px;
+	background-color: skyblue;
+	position: absolute;
+	z-index: -100;
+}
+
+#truck {
+	left: -1550px;
+	top: 500px;
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    background-color: darkgreen;
+    animation-name: drive;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: flex;
+}
+
+h1{
+	width: 100px;
+    position: absolute;
+    top: 41px;
+}
+
+h2{
+	position: absolute;
+    width: 200px;
+    left: 110px;
+    top: 50px;
+}
+
+
+#text{
+	position: absolute;
+	z-index: 1;
+	color: darkgreen;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+
+#frame{
+	width: 400px;
+    height: 200px;
+    position: relative;
+    background-color: yellow;
+}
+
+#wheel1{
+	width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: darkgrey;
+    border-radius: 100%;
+    bottom: -50px;
+
+}
+
+#wheel2{
+	width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: darkgrey;
+    border-radius: 100%;
+    bottom: -50px;
+    right: 40px;	
+}
+
+#glass{
+	height:100px;
+	width: 70px;
+	background-color: #c9dbdc;
+	top: 50px;
+	right: 0px;
+	position: absolute;
+}
+
+#road{
+	top: 550px;
+	background-color: grey;
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	z-index: -1;
+}
+
+#line{    
+	font-size: 250px;
+    font-weight: bold;
+    letter-spacing: 156px;
+    color: white;
+}
+
+
+#b1{
+	height: 500px;
+	width: 400px;
+	background-color: brown;
+	margin-top: 120px;
+	z-index: -1;
+	position: absolute;	
+}
+
+#b2{
+	left: 541px;
+	height: 510px;
+	width: 300px;
+	background-color: khaki;
+	margin-top: 41px;
+	z-index: -1;
+	position: absolute;	
+}
+
+#b3{
+	left: 910px;
+	height: 550px;
+	width: 350px;
+	background-color: brown;
+	margin-top: 105px;
+	z-index: -1;
+	position: absolute;	
+}
+
+#b4{
+	left: 1310px;
+	height: 600px;
+	width: 400px;
+	background-color: brown;
+	margin-top: 20px;
+	z-index: -1;
+	position: absolute;	
+}
+
+#b5{
+	left: 1750px;
+	height: 500px;
+	width: 200px;
+	background-color: darkgray;
+	margin-top: 120px;
+	z-index: -1;
+	position: absolute;	
+}
+
+#window1wrap{
+	width: 300px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#window2wrap{
+	width: 260px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.window{
+	height: 50px;
+	width: 35px;
+	background-color: #c9dbdc;
+	display: inline-table;
+	margin: 15px;
+}
+
+
+#sun{
+	z-index: 1;
+	border-radius:100%;
+	width:100px;
+	height:100px;
+    background-image: linear-gradient(orange, yellow);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+
+/*animation*/
+
+@keyframes drive {
+    0%{left:-1550px;}
+    20%{left:920px;}
+    40%{left:920px;}
+
+    100%{left:3520px;}
+}
+
+@keyframes die{
+	0%{transform: rotate(0deg) scale(0.3);margin-top:500px;}
+	25%{transform: rotate(90deg) scale(0.3);margin-top: 600px;}
+	50%{transform: rotate(90deg) scale(0.3);margin-top: 600px;}
+	75%{transform: rotate(90deg) scale(0.3);margin-top: 600px;opacity: 1;}
+	100%{transform: rotate(90deg) scale(0.3);opacity: 0;margin-top: 555px;}
+}
+
+
+/*body of ali a*/
+
+
+#all{
+	transform: scale(0.3);
+	width: 200px;
+	margin-left: 1450px;
+	margin-top: 500px;
+	position: absolute;
+	animation-name: die;
+    animation-duration: 5s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    z-index: -1
+}
+
+#head{
+	background-color: #ffe0bd;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+#body{
+	height: 200px;
+	width: 100px;
+	background-color: red;
+	border-radius: 30%
+}
+
+
+#hat1{
+	background-color: black;
+	height: 20px;
+	width: 100px;
+	border-radius: 50%;
+	position: absolute; 
+}
+
+#hat2{
+	background-color: black;
+	height: 50px;
+	width: 60px;
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 20px;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+}
+
+#hat3{
+	background-color: white;
+	height: 10px;
+	width: 60px;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 20px;	
+}
+
+#eye{
+	background-color: #FFF;
+	height: 20px;
+	width: 30px;
+	border-radius: 50%;
+	position: absolute; 
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+#eye2{
+	background-color: #FFF;
+	height: 20px;
+	width: 30px;
+	border-radius: 50%;
+	position: absolute; 
+	margin-top: 30px;
+	margin-left: 60px;	
+}
+
+#eyelid{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color:#63ca00;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#eyelid2{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color:#63ca00;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#nose{
+	width: 15px;
+	height: 25px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: white;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 40px;
+	border-top: 0px;
+	border-bottom-left-radius:  1000px;
+	border-bottom-right-radius:  1000px;	
+}
+
+#mustache{
+	height: 10px;
+	width: 30px;
+	background-color: black;
+	position: absolute;
+	margin-left: 35px;
+	margin-top: 55px;
+}
+
+#mouth{
+	background-color: black;
+	height: 30px;
+	width: 60px;
+	border-radius: 50%;
+	position: absolute;
+	border-bottom-left-radius:  1000px;
+	border-bottom-right-radius:  1000px;
+	margin-top: 69px;
+	margin-left: 20px;
+}
+
+#shoulders{
+    width: 150px;
+    position: absolute;
+    background-color: red;
+    height: 50px;
+    z-index: 1;
+    margin-left: -25px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+
+#belt{
+	
+	width: 100px;
+	height: 15px;
+	position: absolute;
+	background-color: brown;
+	z-index: 1;
+	margin-top: -40px;
+}
+
+#belt0{
+	border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    height: 80%;
+    width: 20px;
+    margin-left: 40px;
+}
+
+#pants{
+	height: 50px;
+	width: 100px;
+	background-color: black;
+	position: absolute;
+	margin-top: -40px;
+}
+
+#trouserl{
+	height: 90px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+}
+
+#trouserr{
+	height: 90px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+	margin-left: 60px;
+}
+
+
+#trouserlu{
+	height: 90px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+	margin-top: 90px;
+}
+
+#trouserru{
+	height: 90px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 90px;
+}
+
+#kneel{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+	margin-top: 70px;
+	z-index: 1;
+}
+
+#kneer{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	background-color: black;
+	position: absolute;
+	margin-top: 70px;
+	z-index: 1;
+	margin-left: 60px;
+}
+
+#sockl{
+    height: 13px;
+    width: 30px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 180px;
+}
+
+#sockr{
+    height: 13px;
+    width: 30px;
+    background-color: blue;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 180px;
+}
+
+
+#shoel{
+    height: 30px;
+    width: 104px;
+    background-color: black;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 190px;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 70%;
+}
+
+#shoer{
+    height: 30px;
+    width: 104px;
+    background-color: black;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 190px;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 40%;
+}
+
+#leftsleeve{
+	z-index: 1;
+    background-color: red;
+    height: 180px;
+    width: 40px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    position: absolute;
+    top: 112px;
+    left: -46px;
+    transform: rotate(10deg);
+}
+
+#rightsleeve{
+	z-index: 1;
+    background-color: red;
+    height: 180px;
+    width: 40px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    position: absolute;
+    top: 112px;
+    left: 106px;
+    transform: rotate(-10deg);
+}
+
+
+
+#lefthand{
+    height: 40px;
+    width: 40px;
+    background-color: #ffe0bd;
+    position: absolute;
+    z-index: 0;
+    margin-left: -66px;
+    margin-top: -20px;
+    border-top-left-radius: 91%;
+    border-top-right-radius: 26%;
+    border-bottom-right-radius: 64%;
+}
+
+#righthand{
+    height: 40px;
+    width: 40px;
+    background-color: #ffe0bd;
+    position: absolute;
+    z-index: 0;
+    margin-left: 125px;
+    margin-top: -20px;
+    border-top-left-radius: 26%;
+    border-top-right-radius: 91%;
+    border-bottom-left-radius: 64%;
+}
+
+.finger{
+	width: 8px;
+	height: 30px;
+	background-color: #ffe0bd;
+	position: absolute;
+	z-index: 1;
+	border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+#f1{
+	margin-top: 34px;
+    margin-left: 28px;
+    transform: rotate(-190deg);
+}
+
+#f2{
+    margin-top: 36px;
+    margin-left: 18px;
+    transform: rotate(-186deg);
+}
+
+#f3{
+    margin-top: 36px;
+    margin-left: 6px;
+    transform: rotate(-177deg);	
+}
+
+#f4{
+    margin-top: 29px;
+    margin-left: -3px;
+    transform: rotate(-165deg);
+}
+
+
+#rf1{
+    margin-top: 36px;
+    margin-left: 25px;
+    transform: rotate(-188deg);
+}
+
+#rf2{
+    margin-top: 33px;
+    margin-left: 2px;
+    transform: rotate(-166deg);
+}
+
+#rf3{
+	margin-top: 37px;
+    margin-left: 13px;
+    transform: rotate(-177deg);}
+
+#rf4{
+	margin-top: 30px;
+    margin-left: 35px;
+    transform: rotate(-191deg);
+
+}
+
+
+
+#f5{
+    width: 10px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 35px;
+    transform: rotate(160deg);
+}
+
+#rf5{
+    width: 10px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: -5px;
+    transform: rotate(-160deg);
+}
